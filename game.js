@@ -9,7 +9,7 @@ window.onload = function() {
   
 };
 
-inputValue.onchange = function() {
+document.querySelector("#inputValue").onchange = function() {
   flexDiv.innerHTML = "";
   for(let i = 0; i < inputValue; i++) {
     flexDiv.innerHTML += "<section class='searchObject'></section>"
