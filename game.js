@@ -10,6 +10,7 @@ window.onload = function() {
 };
 
 document.querySelector("#inputValue").onchange = function() {
+  inputValue = parseInt(document.querySelector("#inputValue").value);
   flexDiv.innerHTML = "";
   for(let i = 0; i < inputValue; i++) {
     flexDiv.innerHTML += "<section class='searchObject'></section>"
